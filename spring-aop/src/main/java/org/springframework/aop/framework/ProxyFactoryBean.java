@@ -156,7 +156,7 @@ public class ProxyFactoryBean extends ProxyCreatorSupport
 	 */
 	public void setInterceptorNames(String... interceptorNames) {
 		this.interceptorNames = interceptorNames;
-		initializeAdvisorChain();
+		this.advisorChainInitialized = false;
 	}
 
 	/**
